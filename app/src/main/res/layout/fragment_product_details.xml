@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llBack"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ivMenu"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_backbutton"></ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Product Details"
+                android:layout_toRightOf="@+id/llMenu"
+                android:drawablePadding="6dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/llCart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ivHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_ccart">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvCartCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <EditText-->
+<!--            android:id="@+id/signUpRefCode"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="34dp"-->
+<!--            android:layout_marginLeft="35dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="35dp"-->
+<!--            android:background="@drawable/ic_edit_search"-->
+<!--            android:drawableLeft="@drawable/ic_lens"-->
+<!--            android:drawableRight="@drawable/ic_filter"-->
+<!--            android:text="Find Groceries"-->
+<!--            android:textSize="13dp">-->
+
+<!--        </EditText>-->
+
+
+
+            <ImageView
+                android:id="@+id/ivFavorites"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_heart"></ImageView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imageSlider"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organic Groundnut Whole"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/productVariant"
+                android:layout_width="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner_type" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productPrice"
+            android:text="Rs. 109"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textColor="#ff9445"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/llProductCart"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorpopti"
+                    android:layout_margin="1dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/productDec"
+                        android:layout_width="26dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/product_detail_dec"></ImageView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCartStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensan_regular"
+                    android:gravity="center"
+                    android:text="Add to Cart"
+                    android:textAllCaps="false"
+                    android:background="@color/colorpopti"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvItemNo"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensan_regular"
+                    android:gravity="center"
+                    android:text="Add to Cart"
+                    android:background="@color/colorpopti"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="1dp"
+                    android:background="@color/colorpopti"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/productInc"
+                        android:layout_width="26dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/product_detail_inc"></ImageView>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/background_bottom_order_details"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Information"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/productDescription"
+                android:layout_height="wrap_content"
+                android:text="Groundnuts or monky nuts are not actually nuts and they belongs to the legume family and are related to bean..."
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVProdDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Product Description"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvVProdDesc"
+                android:layout_height="wrap_content"
+                android:text="Groundnuts or monky nuts are not actually nuts and they belongs to the legume family and are related to bean..."
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/background_bottom_order_details"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Products from this store"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="View All"
+            android:textColor="#0083cd"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:id="@+id/rvRelatedProduct"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

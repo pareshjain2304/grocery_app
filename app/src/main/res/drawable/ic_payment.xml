@@ -1,0 +1,106 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="720dp"
+    android:height="1400dp"
+    android:viewportWidth="720"
+    android:viewportHeight="1400">
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 3"
+        android:pathData="m0 0h720v104c0 55.2 -44.8 100 -100 100h-520c-55.2 0 -100 -44.8 -100 -100v-104z" />
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 1 copy"
+        android:pathData="m693.1 23h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 2  copy"
+        android:pathData="m693.1 20h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f4f3f2"
+        android:name="battery level 4 copy"
+        android:pathData="m693.1 14h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f2f0ef"
+        android:name="battery full copy"
+        android:pathData="m695 13h4v1h-4v-1z" />
+    <path
+        android:fillColor="#fff"
+        android:name="network connection copy"
+        android:pathData="m670.6 26h13.9v-14l-13.9 14z" />
+    <path
+        android:fillColor="#fff"
+        android:name="wifi copy"
+        android:pathData="m659.7 26 8.7 -10.9c-0.3 -0.3 -3.7 -3.1 -8.7 -3.1c-5.1 0 -8.4 2.8 -8.7 3.1l8.7 10.9z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2"
+        android:pathData="m117 1242h475c21 0 38 17 38 38v7c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-7c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2 copy"
+        android:pathData="m120 964h475c21 0 38 17 38 38v7c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-7c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2 copy 2"
+        android:pathData="m120 833h475c21 0 38 17 38 38v7c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-7c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2 copy 3"
+        android:pathData="m120 702h475c21 0 38 17 38 38v7c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-7c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2 copy 4"
+        android:pathData="m120 292h475c21 0 38 17 38 38v40c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-40c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#f17c52"
+        android:name="Rounded Rectangle 2 copy 5"
+        android:pathData="m120 438h475c21 0 38 17 38 38v40c0 21 -17 38 -38 38h-475c-21 0 -38 -17 -38 -38v-40c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1"
+        android:pathData="m598 729c8.3 0 15 6.7 15 15c0 8.3 -6.7 15 -15 15c-8.3 0 -15 -6.7 -15 -15c0 -8.3 6.7 -15 15 -15z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1 copy"
+        android:pathData="m598.5 734c5.8 0 10.5 4.7 10.5 10.5c0 5.8 -4.7 10.5 -10.5 10.5c-5.8 0 -10.5 -4.7 -10.5 -10.5c0 -5.8 4.7 -10.5 10.5 -10.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots"
+        android:pathData="m608.5 357.9c1.9 0 3.5 1.6 3.5 3.5c0 2 -1.6 3.5 -3.5 3.5c-1.9 0 -3.5 -1.6 -3.5 -3.5c0 -2 1.6 -3.5 3.5 -3.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots"
+        android:pathData="m608.5 346.9c1.9 0 3.5 1.6 3.5 3.6c0 2 -1.6 3.6 -3.5 3.6c-1.9 0 -3.5 -1.6 -3.5 -3.6c0 -2 1.6 -3.6 3.5 -3.6z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots"
+        android:pathData="m608.5 336c1.9 0 3.5 1.6 3.5 3.5c0 2 -1.6 3.5 -3.5 3.5c-1.9 0 -3.5 -1.6 -3.5 -3.5c0 -2 1.6 -3.5 3.5 -3.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots copy"
+        android:pathData="m608.5 509.9c1.9 0 3.5 1.6 3.5 3.5c0 2 -1.6 3.5 -3.5 3.5c-1.9 0 -3.5 -1.6 -3.5 -3.5c0 -2 1.6 -3.5 3.5 -3.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots copy"
+        android:pathData="m608.5 498.9c1.9 0 3.5 1.6 3.5 3.6c0 2 -1.6 3.6 -3.5 3.6c-1.9 0 -3.5 -1.6 -3.5 -3.6c0 -2 1.6 -3.6 3.5 -3.6z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse dots copy"
+        android:pathData="m608.5 488c1.9 0 3.5 1.6 3.5 3.5c0 2 -1.6 3.5 -3.5 3.5c-1.9 0 -3.5 -1.6 -3.5 -3.5c0 -2 1.6 -3.5 3.5 -3.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1 copy 2"
+        android:pathData="m598.5 864c5.8 0 10.5 4.7 10.5 10.5c0 5.8 -4.7 10.5 -10.5 10.5c-5.8 0 -10.5 -4.7 -10.5 -10.5c0 -5.8 4.7 -10.5 10.5 -10.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1 copy 4"
+        android:pathData="m138.5 326c13.5 0 24.5 11 24.5 24.5c0 13.5 -11 24.5 -24.5 24.5c-13.5 0 -24.5 -11 -24.5 -24.5c0 -13.5 11 -24.5 24.5 -24.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1 copy 5"
+        android:pathData="m138.5 471c13.5 0 24.5 11 24.5 24.5c0 13.5 -11 24.5 -24.5 24.5c-13.5 0 -24.5 -11 -24.5 -24.5c0 -13.5 11 -24.5 24.5 -24.5z" />
+    <path
+        android:fillColor="#ffb79d"
+        android:name="Ellipse 1 copy 3"
+        android:pathData="m598.5 994c5.8 0 10.5 4.7 10.5 10.5c0 5.8 -4.7 10.5 -10.5 10.5c-5.8 0 -10.5 -4.7 -10.5 -10.5c0 -5.8 4.7 -10.5 10.5 -10.5z" />
+</vector>

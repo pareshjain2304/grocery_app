@@ -1,0 +1,8 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/categorysnacks"
+        android:height="125dp"
+        android:width="300dp"/>
+</layer-list>

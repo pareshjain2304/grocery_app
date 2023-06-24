@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/product_category_deselected">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProdName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Grocery products"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvProdPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="105"
+                        android:drawableLeft="@drawable/ic_rupee"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="20dp"
+                        android:textSize="16sp"></TextView>
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/llRemove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="17dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/remove"></ImageView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvQty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensan_regular"
+                                    android:text="2"
+                                    android:layout_toRightOf="@+id/llMenu"
+                                    android:drawablePadding="6dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/llAdd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:layout_centerVertical="true">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="17dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="10dp"
+                                        android:src="@drawable/add"></ImageView>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="210"
+                            android:id="@+id/tvTotalProdPrice"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_rupee"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRemoveItem"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/ivNotification"
+                            android:layout_width="14dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_closebutton">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

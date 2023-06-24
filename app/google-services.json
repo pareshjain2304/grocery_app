@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "741252564115",
+    "project_id": "happinessindia-4b0d8",
+    "storage_bucket": "happinessindia-4b0d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741252564115:android:c4215bd2a4f01426893966",
+        "android_client_info": {
+          "package_name": "in.happiness.groceryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741252564115-7au4k73fjmju68mbpe9bjcvfdf75vine.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfFeQZY98murAmzsmn4EeRY6ZyqVTH6qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741252564115-7au4k73fjmju68mbpe9bjcvfdf75vine.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

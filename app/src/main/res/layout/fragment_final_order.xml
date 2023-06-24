@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llBack"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivMenu"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_backbutton"></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_closebutton"></ImageView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPayment"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ordersplaced"
+                android:layout_height="200dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorTheme"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="Order Placed">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvOrderMsg"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:text="Thank you for shopping with us.\nYour payment was successful.">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/llTrackStatus"
+                android:background="@drawable/background_button_green_curve"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnTrackStatus"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Track order status"
+                    android:layout_marginTop="7dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/llRetry"
+                android:background="@drawable/background_button_green_curve"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnRetry"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="Retry"
+                    android:layout_marginTop="7dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/llHome"
+                android:background="@drawable/background_button_grey"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnHome"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:text="Back to home"
+                    android:layout_marginTop="7dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

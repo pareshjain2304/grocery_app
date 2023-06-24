@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:background="@drawable/background_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/idIVcourse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/category4" />
+
+        <TextView
+            android:id="@+id/tvProdName"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="60dp"
+            android:text="Healthy Raw Seeds"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:id="@+id/tvProdPrice"
+            android:layout_width="90dp"
+            android:textColor="#ff9445"
+            android:layout_height="30dp"
+            android:text="Rs. 228"/>
+
+        <TextView
+            android:id="@+id/tvCart"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/opensan_regular"
+            android:gravity="center"
+            android:background="@color/colorpopti"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tvView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/opensan_regular"
+            android:gravity="center"
+            android:background="@color/colorpopti"
+            android:text="View"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+</FrameLayout>

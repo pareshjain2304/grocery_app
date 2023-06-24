@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/ic_notification_top_curve"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llBack"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/ivMenu"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_backbutton"></ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Cart"
+                        android:layout_toRightOf="@+id/llMenu"
+                        android:drawablePadding="6dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/ivHelp"
+                            android:layout_width="20dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_closebutton"></ImageView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+<!--                <include-->
+<!--                    layout="@layout/cart_list"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/rvCart"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_payment_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edCCode"
+                            android:layout_width="121dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensan_regular"
+                            android:hint="Promo Code"
+                            android:inputType="textCapCharacters"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCCode"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="80dp"
+                        android:background="@drawable/background_button_green_curve"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:layout_margin="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Apply"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_bottom"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Subtotal"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/tvSubTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="1020"
+                            android:drawableLeft="@drawable/ic_rupee"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_bottom"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Discount"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/tvDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="0"
+                            android:drawableLeft="@drawable/ic_rupee"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/llDeliveryCharge"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_bottom"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Delivery"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/tvDelivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="0"
+                            android:drawableLeft="@drawable/ic_rupee"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_bottom"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Total"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginRight="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_rupee"
+                            android:fontFamily="@font/opensan_regular"
+                            android:gravity="center"
+                            android:text="1015"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"></TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/ic_payment_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Deliver to"/>
+
+                        <ImageView
+                            android:layout_marginLeft="160dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:src="@drawable/ic_adress"
+                            android:id="@+id/tvAddLocation"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/userLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/llPayment"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/background_button_grey"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Checkout"
+                        android:id="@+id/signup_btn"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="16sp">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

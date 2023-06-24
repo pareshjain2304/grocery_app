@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+
+            <solid android:color="#ffffff" />
+
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <corners
+                android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp" />
+
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_baseline_dec"
+        android:gravity="right|center"
+        android:height="16dp"
+        android:width="16dp"/>
+</layer-list>

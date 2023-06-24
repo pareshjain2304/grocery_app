@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_notification_top_curve"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenu"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_backbutton"></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUser"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Hey Avinash!"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textSize="22sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUpdateProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Edit Profile"
+                        android:drawableRight="@drawable/ic_forward_foreground"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textSize="13sp"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/llClose"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_closebutton"></ImageView>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorBlack"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llCategory"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shopbycategory"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Shop by Category"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddress"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/ic_round_white"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_address"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Address"
+                        android:drawablePadding="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+            android:id="@+id/llRefer"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_referfriend"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Refer a Friend"
+                android:drawablePadding="6dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llFaq"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_faq"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/opensan_regular"
+                android:text="FAQs"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNeedHelp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_needhelp"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Need Help ?"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llAboutUs"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_aboutus"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="About us"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llTermsCondition"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_termsandconditions"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Term &amp; Conditions"
+                android:drawablePadding="6dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llPrivacyPolicy"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_privacypolicy"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Privacy Policy"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llRefundCancellation"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_privacypolicy"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Refund &amp; Cancellation"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llContactUs"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_privacypolicy"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Contact Us"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llShippingPolicy"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_privacypolicy"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Shipping &amp; Delivery Policy"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/llSignout"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_signout"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Sign Out"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="6dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

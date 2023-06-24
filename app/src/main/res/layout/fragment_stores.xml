@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTopMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llBack"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivMenu"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_backbutton">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Happiness India Shops"
+                    android:layout_toRightOf="@+id/llMenu"
+                    android:drawablePadding="6dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/llCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/ivHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_ccart">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tvCartCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edStores"
+                android:background="@drawable/ic_edit_search"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="35dp"
+                android:drawableLeft="@drawable/ic_lens"
+                android:hint="Find Stores"
+                android:layout_marginLeft="35dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/shopCount"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_margin="15dp"
+                                android:id="@+id/recyclerViewStores"
+                                android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        <!--    <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idGVcourses"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:horizontalSpacing="16dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:numColumns="2"
+                android:verticalSpacing="16dp" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

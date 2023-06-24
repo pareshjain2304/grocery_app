@@ -1,0 +1,82 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="720dp"
+    android:height="1400dp"
+    android:viewportWidth="720"
+    android:viewportHeight="1400">
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 1"
+        android:pathData="m-46 756c0 0 80.5 -119.5 254 -68c173.5 51.5 232.5 73.5 330 50c97.5 -23.5 200.5 -101.5 248 -118c47.5 -16.5 34 822 34 822l-818 -4l-48 -682z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 1 copy"
+        android:pathData="m-58.8 1244.1c0 0 56.9 -132.4 237 -113.9c180 18.4 242.1 29.1 333.5 -12.1c91.4 -41.2 178.2 -136.9 221.8 -162c43.6 -25 185.9 801.4 185.9 801.4l-804.5 147.8l-173.7 -661.3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 1"
+        android:pathData="m686.2 25h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 2 "
+        android:pathData="m686.2 22h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f2f0ef"
+        android:name="battery level 3"
+        android:pathData="m686.2 19h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f4f3f2"
+        android:name="battery level 4"
+        android:pathData="m686.2 16h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f2f0ef"
+        android:name="battery full"
+        android:pathData="m688.2 15h4v1h-4v-1z" />
+    <path
+        android:fillColor="#fff"
+        android:name="network connection"
+        android:pathData="m663.8 28h13.9v-14l-13.9 14z" />
+    <path
+        android:fillColor="#fff"
+        android:name="wifi"
+        android:pathData="m652.9 28 8.7 -10.9c-0.3 -0.3 -3.7 -3.1 -8.7 -3.1c-5.1 0 -8.4 2.8 -8.7 3.1l8.7 10.9z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Rounded Rectangle 1"
+        android:pathData="m116 1205h486c21 0 38 17 38 38v5c0 21 -17 38 -38 38h-486c-21 0 -38 -17 -38 -38v-5c0 -21 17 -38 38 -38z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2"
+        android:pathData="m257.6 873.5c0 0 39.3 -87.6 81.8 -49.3c42.5 38.4 76.7 17.4 59.7 63.6c-16.9 46.3 -46.2 48.6 -75.6 40.1c-29.3 -8.4 -66 -54.5 -66 -54.5z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2 copy 3"
+        android:pathData="m646.8 760.4c0 0 -20.2 -40.3 6.5 -44.6c26.6 -4.2 29.2 -23 41 -3.1c11.8 19.9 3.9 31.3 -7.9 39.6c-11.8 8.3 -39.5 8.1 -39.5 8.1z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2 copy"
+        android:pathData="m403.6 1026.8c0 0 23.4 31.6 1.1 39.2c-22.2 7.5 -21.6 24 -34.7 8.7c-13.1 -15.3 -8 -26.3 0.9 -35.1c8.9 -8.8 32.7 -12.7 32.7 -12.7z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2 copy 5"
+        android:pathData="m271.6 721.8c0 0 23.4 31.6 1.1 39.2c-22.2 7.5 -21.6 24 -34.7 8.7c-13.1 -15.3 -8 -26.3 0.9 -35.1c8.9 -8.8 32.7 -12.7 32.7 -12.7z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2 copy 4"
+        android:pathData="m566.7 936.3c0 0 -19.4 -62.6 19.7 -62.3c39.1 0.3 47.2 -25.9 59.4 5.4c12.2 31.3 -1.8 45.8 -20.6 54.8c-18.9 9 -58.5 2.1 -58.5 2.1z" />
+    <path
+        android:fillColor="#c7f465"
+        android:name="Shape 2 copy 2"
+        android:pathData="m-76 886.3c0 0 35.5 -79.2 74 -44.5c38.4 34.7 69.3 15.7 54 57.5c-15.3 41.8 -41.8 43.9 -68.3 36.3c-26.5 -7.6 -59.6 -49.3 -59.6 -49.3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Rounded Rectangle 1 copy"
+        android:pathData="m132.5 1091h456c17.9 0 32.5 14.6 32.5 32.5c0 17.9 -14.6 32.5 -32.5 32.5h-456c-17.9 0 -32.5 -14.6 -32.5 -32.5c0 -17.9 14.6 -32.5 32.5 -32.5z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Rounded Rectangle 1 copy 2"
+        android:pathData="m132.5 950h456c17.9 0 32.5 14.6 32.5 32.5c0 17.9 -14.6 32.5 -32.5 32.5h-456c-17.9 0 -32.5 -14.6 -32.5 -32.5c0 -17.9 14.6 -32.5 32.5 -32.5z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Rounded Rectangle 1 copy 3"
+        android:pathData="m132.5 808h456c17.9 0 32.5 14.6 32.5 32.5c0 17.9 -14.6 32.5 -32.5 32.5h-456c-17.9 0 -32.5 -14.6 -32.5 -32.5c0 -17.9 14.6 -32.5 32.5 -32.5z" />
+</vector>

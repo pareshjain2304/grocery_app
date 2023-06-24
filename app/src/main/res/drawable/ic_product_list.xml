@@ -1,0 +1,82 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="720dp"
+    android:height="1400dp"
+    android:viewportWidth="720"
+    android:viewportHeight="1400">
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 1"
+        android:pathData="m686.2 25h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#fff"
+        android:name="battery level 2 "
+        android:pathData="m686.2 22h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f4f3f2"
+        android:name="battery level 4"
+        android:pathData="m686.2 16h7.9v3h-7.9v-3z" />
+    <path
+        android:fillColor="#f2f0ef"
+        android:name="battery full"
+        android:pathData="m688.2 15h4v1h-4v-1z" />
+    <path
+        android:fillColor="#fff"
+        android:name="network connection"
+        android:pathData="m663.8 28h13.9v-14l-13.9 14z" />
+    <path
+        android:fillColor="#fff"
+        android:name="wifi"
+        android:pathData="m652.9 28 8.7 -10.9c-0.3 -0.3 -3.7 -3.1 -8.7 -3.1c-5.1 0 -8.4 2.8 -8.7 3.1l8.7 10.9z" />
+    <path
+        android:fillColor="#aaa"
+        android:name="Rectangle 2"
+        android:pathData="m-1 326h719v4h-719v-4z" />
+    <path
+        android:fillColor="#aaa"
+        android:name="Rectangle 2 copy"
+        android:pathData="m-1 807h719v4h-719v-4z" />
+    <path
+        android:fillColor="#aaa"
+        android:name="Rectangle 2 copy 3"
+        android:pathData="m-1 1048h719v4h-719v-4z" />
+    <path
+        android:fillColor="#aaa"
+        android:name="Rectangle 2 copy 2"
+        android:pathData="m-1 567h719v4h-719v-4z" />
+    <path
+        android:fillColor="#fff"
+        android:name="Rounded Rectangle 4"
+        android:pathData="m56 154h608c5.5 0 10 4.5 10 10v25c0 5.5 -4.5 10 -10 10h-608c-5.5 0 -10 -4.5 -10 -10v-25c0 -5.5 4.5 -10 10 -10z" />
+    <path
+        android:name="Rounded Rectangle 4"
+        android:pathData="m664 156c4.4 0 8 3.6 8 8v25c0 4.4 -3.6 8 -8 8h-608c-4.4 0 -8 -3.6 -8 -8v-25c0 -4.4 3.6 -8 8 -8zm-608 -2c-5.5 0 -10 4.5 -10 10v25c0 5.5 4.5 10 10 10h608c5.5 0 10 -4.5 10 -10v-25c0 -5.5 -4.5 -10 -10 -10z"
+        android:fillColor="#ccc" />
+    <path
+        android:name="Rounded Rectangle 6"
+        android:pathData="m462 487c4.4 0 8 3.6 8 8v27c0 4.4 -3.6 8 -8 8h-198c-4.4 0 -8 -3.6 -8 -8v-27c0 -4.4 3.6 -8 8 -8zm-198 -2c-5.5 0 -10 4.5 -10 10v27c0 5.5 4.5 10 10 10h198c5.5 0 10 -4.5 10 -10v-27c0 -5.5 -4.5 -10 -10 -10z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 6 copy"
+        android:pathData="m462 733c4.4 0 8 3.6 8 8v27c0 4.4 -3.6 8 -8 8h-198c-4.4 0 -8 -3.6 -8 -8v-27c0 -4.4 3.6 -8 8 -8zm-198 -2c-5.5 0 -10 4.5 -10 10v27c0 5.5 4.5 10 10 10h198c5.5 0 10 -4.5 10 -10v-27c0 -5.5 -4.5 -10 -10 -10z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 6 copy 2"
+        android:pathData="m466 969c4.4 0 8 3.6 8 8v27c0 4.4 -3.6 8 -8 8h-198c-4.4 0 -8 -3.6 -8 -8v-27c0 -4.4 3.6 -8 8 -8zm-198 -2c-5.5 0 -10 4.5 -10 10v27c0 5.5 4.5 10 10 10h198c5.5 0 10 -4.5 10 -10v-27c0 -5.5 -4.5 -10 -10 -10z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 6 copy 3"
+        android:pathData="m466 1217c4.4 0 8 3.6 8 8v27c0 4.4 -3.6 8 -8 8h-198c-4.4 0 -8 -3.6 -8 -8v-27c0 -4.4 3.6 -8 8 -8zm-198 -2c-5.5 0 -10 4.5 -10 10v27c0 5.5 4.5 10 10 10h198c5.5 0 10 -4.5 10 -10v-27c0 -5.5 -4.5 -10 -10 -10z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 8"
+        android:pathData="m199.5 235.5c14.9 0 27 12.1 27 27c0 14.9 -12.1 27 -27 27h-114c-14.9 0 -27 -12.1 -27 -27c0 -14.9 12.1 -27 27 -27zm-114 -1.5c-15.7 0 -28.5 12.8 -28.5 28.5c0 15.7 12.8 28.5 28.5 28.5h114c15.7 0 28.5 -12.8 28.5 -28.5c0 -15.7 -12.8 -28.5 -28.5 -28.5z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 8 copy"
+        android:pathData="m423.5 235.5c14.9 0 27 12.1 27 27c0 14.9 -12.1 27 -27 27h-114c-14.9 0 -27 -12.1 -27 -27c0 -14.9 12.1 -27 27 -27zm-114 -1.5c-15.7 0 -28.5 12.8 -28.5 28.5c0 15.7 12.8 28.5 28.5 28.5h114c15.7 0 28.5 -12.8 28.5 -28.5c0 -15.7 -12.8 -28.5 -28.5 -28.5z"
+        android:fillColor="#aaa" />
+    <path
+        android:name="Rounded Rectangle 8 copy 2"
+        android:pathData="m630.5 235.5c14.9 0 27 12.1 27 27c0 14.9 -12.1 27 -27 27h-114c-14.9 0 -27 -12.1 -27 -27c0 -14.9 12.1 -27 27 -27zm-114 -1.5c-15.7 0 -28.5 12.8 -28.5 28.5c0 15.7 12.8 28.5 28.5 28.5h114c15.7 0 28.5 -12.8 28.5 -28.5c0 -15.7 -12.8 -28.5 -28.5 -28.5z"
+        android:fillColor="#aaa" />
+</vector>

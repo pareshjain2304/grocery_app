@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNoComplaintFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@color/colorBorderBlue"
+            android:fontFamily="@font/opensan_regular"
+            android:text="Dear Customer, Your Complaint has been registered with us and soon it will get resolved by our customer support executive"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"></TextView>
+
+        <LinearLayout
+            android:layout_below="@+id/tvNoComplaintFound"
+            android:id="@+id/llUserReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/tvUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensan_regular"
+                    android:gravity="right"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginHorizontal="26dp"
+                    android:text="You"
+                    android:background="@drawable/edittext_bottom_border"
+                    android:textColor="@color/colorGreenBg"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Sep 10, 2020 06:46 AM"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvReply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:text="Reply from user"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/tvNoComplaintFound"
+            android:id="@+id/llAdminReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensan_regular"
+                    android:gravity="left"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginHorizontal="26dp"
+                    android:text="Support"
+                    android:background="@drawable/edittext_bottom_border"
+                    android:textColor="@color/colorGreenBg"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDateTimeAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Sep 10, 2020 06:46 AM"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvReplyAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:text="Reply from user"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

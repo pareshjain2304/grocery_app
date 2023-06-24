@@ -1,0 +1,8 @@
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/rupees"
+        android:height="20dp"
+        android:width="15dp"/>
+</layer-list>

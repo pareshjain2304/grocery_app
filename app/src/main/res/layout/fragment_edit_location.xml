@@ -1,0 +1,252 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="in.happiness.groceryapp.fragment.LocationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rlHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llBack"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/ivMenu"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_backbutton"></ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Location"
+                            android:layout_toRightOf="@+id/llMenu"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/ivHelp"
+                                android:layout_width="20dp"
+                                android:layout_height="12dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_closebutton"></ImageView>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Save As"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/saveAs"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_type" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Customer Name"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:background="@drawable/ic_product_container"
+                        android:id="@+id/edContactPerson"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Contact Number"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:background="@drawable/ic_product_container"
+                        android:id="@+id/edContactNumber"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Close Landmark"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="text"
+                        android:background="@drawable/ic_product_container"
+                        android:id="@+id/edLandMark"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Add Location"
+                        android:drawablePadding="6dp"
+                        android:drawableRight="@drawable/ic_adress"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:background="@drawable/ic_product_container"
+                        android:id="@+id/edLocation"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Update"
+                    android:drawablePadding="6dp"
+                    android:background="@drawable/ic_background_grey"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

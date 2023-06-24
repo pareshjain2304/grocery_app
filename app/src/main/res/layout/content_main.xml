@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/llTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llMenu"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu"></ImageView>
+
+            </LinearLayout>
+
+                <TextView
+                    android:background="@drawable/background_button_green"
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Add Location"
+                    android:layout_toRightOf="@+id/llMenu"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_adress"
+                    android:drawablePadding="6dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/llHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_alert">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/ivCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_ccart">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvCartCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp">
+
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llTopMenu"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:animateLayoutChanges="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

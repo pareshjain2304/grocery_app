@@ -1,0 +1,241 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="in.happiness.groceryapp.fragment.FeedBackFormFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/ic_curve_top_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llBack"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_backbutton"></ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Feedback"
+                        android:drawablePadding="6dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/llClose"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivHelp"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/ic_closebutton">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_product_container"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please rate your experience"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="For Vendor"></TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/ivVendorVSad"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ver_sad"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivVendorSad"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/sad"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivVendorNeutral"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/neutral"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivVendorHappy"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/happy"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivVendorVHappy"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/very_happy"></ImageView>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Additional Comment"></TextView>
+                    <EditText
+                        android:id="@+id/edVendorFeedback"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:maxLength="100"
+                        android:inputType="text"
+                        android:background="@drawable/ic_product_container" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="For Delivery Boy"></TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/ivDelVSad"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ver_sad"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivDelSad"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/sad"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivDelNeutral"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/neutral"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivDelHappy"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/happy"></ImageView>
+                        <ImageView
+                            android:id="@+id/ivDelVHappy"
+                            android:layout_width="55dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/very_happy"></ImageView>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:text="Additional Comment"></TextView>
+                    <EditText
+                        android:id="@+id/edDelFeedback"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:maxLength="100"
+                        android:inputType="text"
+                        android:background="@drawable/ic_product_container" />
+                    <TextView
+                        android:id="@+id/tvSumbit"
+                        android:background="@drawable/ic_background_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="30dp"
+                        android:fontFamily="@font/opensan_regular"
+                        android:text="Submit"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

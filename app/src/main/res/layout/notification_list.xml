@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:id="@+id/llStoreItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llMenu"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ic_user_green_round"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/imageNfication"
+                        android:layout_width="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_happiness_logo"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/llMenu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llStoreFrag"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Order Arrived"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Order 240897947227000824 has been completed &amp; arrived at the destination address(Please rates your order)"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="20dp"
+                            android:textStyle="bold"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/opensan_regular"
+                            android:drawableLeft="@drawable/ic_timer"
+                            android:text="May 25, 2021(3.00 pm)"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="20dp"
+                            android:textStyle="bold"
+                            android:textSize="12sp"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

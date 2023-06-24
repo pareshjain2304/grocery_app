@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom">
+
+    <LinearLayout
+        android:id="@+id/llStoreItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llMenu"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:id="@+id/idIVcourse"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/category4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/llMenu">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llStoreFrag"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="Kalyani Foods"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="15sp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="3.8 km swargate"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="20dp"
+                            android:textStyle="bold"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensan_regular"
+                        android:drawableLeft="@drawable/ic_timer"
+                        android:text="Within 60 mins"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_margin="05dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/store_list_yellow"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensan_regular"
+                                android:text="Top store"
+                                android:textStyle="bold"
+                                android:textColor="#77aa0d"
+                                android:textAllCaps="false"
+                                android:drawableLeft="@drawable/ic_star"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/store_list_blue">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:layout_margin="3dp"
+                                android:drawableLeft="@drawable/ic_rupees"
+                                android:fontFamily="@font/opensan_regular"
+                                android:text="Low Delivery Fee"
+                                android:textAllCaps="false"
+                                android:textColor="#6293ca"
+                                android:textSize="10sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

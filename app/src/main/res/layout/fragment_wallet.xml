@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llMyWallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTheme"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/backbutton"></ImageView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginVertical="5dp"
+                            android:fontFamily="@font/opensan_regular"
+                            android:text="My Wallet"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"></TextView>
+
+                        <LinearLayout
+                            android:id="@+id/llHelp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:id="@+id/ivNotification"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_alert"></ImageView>
+                            <ImageView
+                                android:id="@+id/ivHelp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_help_black"></ImageView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="100dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true">
+
+                                <EditText
+                                    android:id="@+id/spnMonth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/ic_edit_search"
+                                    android:paddingVertical="8dp"
+                                    android:paddingRight="6dp"
+                                    android:editable="false"
+                                    android:text="Month"
+                                    android:gravity="center"
+                                    android:drawableRight="@drawable/ic_down_arrow"
+                                    android:cursorVisible="false"
+                                    android:textSize="11sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="100dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true">
+
+                                <EditText
+                                    android:id="@+id/spnStatus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/ic_edit_search"
+                                    android:paddingVertical="8dp"
+                                    android:paddingRight="6dp"
+                                    android:editable="false"
+                                    android:text="Status"
+                                    android:gravity="center"
+                                    android:drawableRight="@drawable/ic_down_arrow"
+                                    android:cursorVisible="false"
+                                    android:textSize="11sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensan_regular"
+                                android:text="Current Balance"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvCurrentBalance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_rupee"
+                                android:fontFamily="@font/opensan_regular"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorBlack"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvWalletList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="20dp"
+                                android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/no_network_connection">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensan_regular"
+                android:text="No Network Connection"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/llRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorGreenBg"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_refresh">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensan_regular"
+                    android:text="Tap To Retry"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

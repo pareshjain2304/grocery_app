@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#c7f465"
+                android:src="@mipmap/ic_app_logo"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Warning"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="20dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Are you sure you want to cancel the payment?"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="20dp"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/opensan_regular"
+                android:text="No"
+                android:gravity="center"
+                android:background="@drawable/edittext_border_black"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tvConfirm"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edittext_border_black"
+                android:layout_marginVertical="12dp"
+                android:gravity="center"
+                android:fontFamily="@font/opensan_regular"
+                android:text="Yes"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="20dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
